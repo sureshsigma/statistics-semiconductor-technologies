@@ -1,0 +1,1479 @@
+# Chapter 10 — Exponential Curve Fitting for Semiconductor Applications
+
+## Learning Objectives
+
+After completing this chapter, students will be able to:
+
+- Recognize exponential relationships in semiconductor measurements.
+- Understand the basic exponential model.
+- Interpret the parameters of an exponential model.
+- Explain why logarithmic transformation can be used to analyze exponential data.
+- Convert an exponential relationship into a linear relationship.
+- Understand the idea of a semi-log plot.
+- Apply exponential fitting to diode current-voltage data.
+- Interpret the slope of a transformed diode equation.
+- Understand Arrhenius-type relationships in semiconductor applications.
+- Estimate activation energy from an exponential temperature relationship.
+- Recognize the limitations of exponential models.
+
+---
+
+## 10.1 Why Do Exponential Relationships Occur in Semiconductor Science?
+
+Many semiconductor phenomena are not described by straight-line relationships.
+
+For example:
+
+- Diode current can increase rapidly with forward voltage.
+- Leakage current can change strongly with temperature.
+- Thermally activated processes can follow exponential relationships.
+- Carrier populations can depend exponentially on energy and temperature.
+
+Therefore, semiconductor scientists and engineers often encounter relationships of the form:
+
+$$
+y=Ae^{Bx}
+$$
+
+This is an **exponential relationship**.
+
+Understanding how to fit such relationships is important because the fitted parameters may have direct physical meaning.
+
+For example, the slope of a transformed diode characteristic can be used to estimate a device parameter such as the ideality factor.
+
+Similarly, a temperature-dependent exponential relationship can be used to estimate activation energy.
+
+---
+
+## 10.2 What Is an Exponential Relationship?
+
+A basic exponential model can be written as:
+
+$$
+\boxed{
+y=Ae^{Bx}
+}
+$$
+
+where:
+
+- $y$ = dependent variable
+- $x$ = independent variable
+- $A$ = constant
+- $B$ = exponential rate parameter
+- $e$ = base of the natural logarithm
+
+The important feature is that $x$ appears in the exponent.
+
+Compare:
+
+### Linear relationship
+
+$$
+y=a+bx
+$$
+
+### Exponential relationship
+
+$$
+y=Ae^{Bx}
+$$
+
+In a linear relationship, the change in $y$ per unit change in $x$ is approximately constant.
+
+In an exponential relationship, the **rate of change itself depends on the value of the variable**.
+
+---
+
+## 10.3 Understanding the Parameters
+
+Consider:
+
+$$
+y=Ae^{Bx}
+$$
+
+### Parameter $A$
+
+When:
+
+$$
+x=0
+$$
+
+we get:
+
+$$
+y=Ae^0
+$$
+
+Since:
+
+$$
+e^0=1
+$$
+
+therefore:
+
+$$
+\boxed{
+y=A
+}
+$$
+
+Thus, $A$ is the value of the model at $x=0$.
+
+### Parameter $B$
+
+The parameter $B$ controls how rapidly the exponential quantity changes with $x$.
+
+If:
+
+$$
+B>0
+$$
+
+the function increases exponentially.
+
+If:
+
+$$
+B<0
+$$
+
+the function decreases exponentially.
+
+---
+
+## 10.4 Recognizing Exponential Data
+
+Consider the following simplified data:
+
+| $x$ | $y$ |
+|---:|---:|
+| 0 | 1 |
+| 1 | 2 |
+| 2 | 4 |
+| 3 | 8 |
+| 4 | 16 |
+
+The values of $y$ are approximately doubling for every unit increase in $x$.
+
+This is not a straight-line pattern.
+
+Instead:
+
+$$
+y=2^x
+$$
+
+which is exponential.
+
+A scatter plot of the original data would show a curved pattern.
+
+---
+
+## 10.5 Semiconductor Example — Diode Current and Forward Voltage
+
+One of the most important exponential relationships in semiconductor science is the diode current-voltage relationship.
+
+The ideal diode equation is:
+
+$$
+\boxed{
+I=I_0
+\left(
+e^{\frac{qV}{nkT}}-1
+\right)
+}
+$$
+
+where:
+
+- $I$ = diode current
+- $I_0$ = reverse saturation current
+- $V$ = applied voltage
+- $q$ = electronic charge
+- $n$ = ideality factor
+- $k$ = Boltzmann constant
+- $T$ = absolute temperature
+
+This equation shows that diode current depends exponentially on voltage under the appropriate operating conditions.
+
+This is a fundamental reason why exponential fitting is relevant to semiconductor technology.
+
+---
+
+## 10.6 Why Does the Diode Characteristic Look Nonlinear?
+
+Suppose we increase the forward voltage of a diode.
+
+At low forward voltage, the current may be relatively small.
+
+As the forward voltage increases, current can increase rapidly.
+
+A simplified set of observations might look like:
+
+| Forward Voltage $V$ (V) | Current $I$ (mA) |
+|---:|---:|
+| 0.50 | 0.02 |
+| 0.55 | 0.05 |
+| 0.60 | 0.14 |
+| 0.65 | 0.39 |
+| 0.70 | 1.10 |
+
+The current does not increase by a constant amount.
+
+Instead, it increases much more rapidly as voltage increases.
+
+Therefore, fitting a straight line directly to:
+
+$$
+I\text{ vs }V
+$$
+
+would generally not be appropriate over the exponential region.
+
+---
+
+## 10.7 Why Do We Use Logarithms?
+
+The exponential model is:
+
+$$
+y=Ae^{Bx}
+$$
+
+We want to transform it into a form that can be analyzed using the linear-fitting ideas from Chapter 9.
+
+Take the natural logarithm of both sides:
+
+$$
+\ln y=\ln(Ae^{Bx})
+$$
+
+Using the logarithm rule:
+
+$$
+\ln(ab)=\ln a+\ln b
+$$
+
+we obtain:
+
+$$
+\ln y=\ln A+\ln(e^{Bx})
+$$
+
+Since:
+
+$$
+\ln(e^{Bx})=Bx
+$$
+
+we obtain:
+
+$$
+\boxed{
+\ln y=\ln A+Bx
+}
+$$
+
+This has exactly the form:
+
+$$
+y'=a+bx
+$$
+
+where:
+
+$$
+y'=\ln y
+$$
+
+$$
+a=\ln A
+$$
+
+and:
+
+$$
+b=B
+$$
+
+Therefore:
+
+> **An exponential relationship becomes a linear relationship when the logarithm of the dependent variable is used.**
+
+---
+
+## 10.8 The Key Transformation
+
+Original exponential model:
+
+$$
+\boxed{
+y=Ae^{Bx}
+}
+$$
+
+Take natural logarithm:
+
+$$
+\boxed{
+\ln y=\ln A+Bx
+}
+$$
+
+Compare with:
+
+$$
+y'=a+bx
+$$
+
+Therefore:
+
+$$
+\boxed{
+a=\ln A
+}
+$$
+
+and:
+
+$$
+\boxed{
+b=B
+}
+$$
+
+Once $a$ and $b$ are obtained from a linear fit:
+
+$$
+A=e^a
+$$
+
+and:
+
+$$
+B=b
+$$
+
+This is the basic method of exponential curve fitting through logarithmic transformation.
+
+---
+
+## 10.9 Semiconductor Example — Transforming Diode Data
+
+Suppose the measured diode current is:
+
+| $V$ (V) | $I$ (mA) |
+|---:|---:|
+| 0.50 | 0.02 |
+| 0.55 | 0.05 |
+| 0.60 | 0.14 |
+| 0.65 | 0.39 |
+| 0.70 | 1.10 |
+
+Instead of fitting:
+
+$$
+I\text{ vs }V
+$$
+
+directly with a straight line, calculate:
+
+$$
+\ln I
+$$
+
+for each current value.
+
+The transformed dataset has the form:
+
+| $V$ (V) | $\ln I$ |
+|---:|---:|
+| 0.50 | $\ln(0.02)$ |
+| 0.55 | $\ln(0.05)$ |
+| 0.60 | $\ln(0.14)$ |
+| 0.65 | $\ln(0.39)$ |
+| 0.70 | $\ln(1.10)$ |
+
+If the diode follows the exponential model reasonably well over this operating range, a plot of:
+
+$$
+\ln I
+$$
+
+against:
+
+$$
+V
+$$
+
+should be approximately linear.
+
+This is the basis of a **semi-log analysis**.
+
+---
+
+## 10.10 What Is a Semi-Log Plot?
+
+A semi-log plot is a graph in which one axis uses a logarithmic scale while the other uses a linear scale.
+
+For example:
+
+- Horizontal axis: $V$
+- Vertical axis: $\log(I)$
+
+or equivalently, one may transform the data using:
+
+$$
+\ln I
+$$
+
+and plot it against $V$ using ordinary linear axes.
+
+For an exponential relationship:
+
+$$
+I=Ae^{BV}
+$$
+
+we have:
+
+$$
+\ln I=\ln A+BV
+$$
+
+Therefore, the transformed data should form approximately a straight line.
+
+---
+
+## 10.11 Interpreting the Slope of the Transformed Relationship
+
+Suppose:
+
+$$
+I=Ae^{BV}
+$$
+
+Then:
+
+$$
+\ln I=\ln A+BV
+$$
+
+Compare this with:
+
+$$
+y=a+bx
+$$
+
+The slope is:
+
+$$
+\boxed{B}
+$$
+
+and the intercept is:
+
+$$
+\boxed{\ln A}
+$$
+
+Therefore, exponential fitting allows us to estimate the parameters $A$ and $B$ using linear fitting after logarithmic transformation.
+
+---
+
+## 10.12 Diode Equation in the Exponential Region
+
+The diode equation is:
+
+$$
+I=I_0
+\left(
+e^{\frac{qV}{nkT}}-1
+\right)
+$$
+
+In an appropriate forward-bias region where the exponential term is much larger than 1:
+
+$$
+e^{\frac{qV}{nkT}}\gg1
+$$
+
+we can approximate:
+
+$$
+I\approx I_0e^{\frac{qV}{nkT}}
+$$
+
+Taking logarithms:
+
+$$
+\ln I
+=
+\ln I_0+
+\frac{q}{nkT}V
+$$
+
+This has the linear form:
+
+$$
+y=a+bV
+$$
+
+where:
+
+$$
+a=\ln I_0
+$$
+
+and:
+
+$$
+\boxed{
+b=\frac{q}{nkT}
+}
+$$
+
+Therefore, if we fit a straight line to $\ln I$ versus $V$, the slope can be used to estimate the ideality factor.
+
+Rearranging:
+
+$$
+b=\frac{q}{nkT}
+$$
+
+gives:
+
+$$
+\boxed{
+n=\frac{q}{bkT}
+}
+$$
+
+This is an important example of how statistical fitting can extract a physically meaningful semiconductor parameter.
+
+---
+
+## 10.13 Why the Operating Region Matters
+
+The simplified relationship:
+
+$$
+I\approx I_0e^{\frac{qV}{nkT}}
+$$
+
+does not necessarily describe the diode over every possible voltage range.
+
+At very low voltages, other effects may become important.
+
+At high currents, effects such as series resistance can cause deviations from the simple exponential model.
+
+Therefore:
+
+> **A fitting model should be applied only over an operating region where the underlying physical assumptions are reasonably valid.**
+
+This is a general principle in experimental data analysis.
+
+---
+
+## 10.14 Example — Extracting a Diode Parameter
+
+Suppose a semi-log fit gives:
+
+$$
+\ln I=a+bV
+$$
+
+and the fitted slope is:
+
+$$
+b=19.3\text{ V}^{-1}
+$$
+
+Suppose the experiment is performed at:
+
+$$
+T=300\text{ K}
+$$
+
+Using:
+
+$$
+b=\frac{q}{nkT}
+$$
+
+the ideality factor is:
+
+$$
+n=\frac{q}{bkT}
+$$
+
+Using:
+
+$$
+q\approx1.602\times10^{-19}\text{ C}
+$$
+
+and:
+
+$$
+k\approx1.381\times10^{-23}\text{ J/K}
+$$
+
+we obtain an estimated value of $n$ close to unity.
+
+The exact value depends on the data and the region selected for fitting.
+
+The important point is the procedure:
+
+$$
+\boxed{
+\text{Measure }I,V
+\rightarrow
+\ln I
+\rightarrow
+\text{linear fit}
+\rightarrow
+\text{slope}
+\rightarrow
+n
+}
+$$
+
+---
+
+## 10.15 Leakage Current and Temperature
+
+Another important semiconductor application is the relationship between a thermally activated quantity and temperature.
+
+A simplified model can be written as:
+
+$$
+\boxed{
+I=I_0e^{-\frac{E_a}{kT}}
+}
+$$
+
+where:
+
+- $I$ = measured current or rate
+- $I_0$ = constant
+- $E_a$ = activation energy
+- $k$ = Boltzmann constant
+- $T$ = absolute temperature
+
+This type of relationship is often called an **Arrhenius-type relationship**.
+
+It is important to use absolute temperature:
+
+$$
+\boxed{
+T\text{ must be measured in kelvin}
+}
+$$
+
+not degrees Celsius.
+
+---
+
+## 10.16 Linearizing the Arrhenius Relationship
+
+Start with:
+
+$$
+I=I_0e^{-\frac{E_a}{kT}}
+$$
+
+Take the natural logarithm:
+
+$$
+\ln I
+=
+\ln I_0
+-
+\frac{E_a}{kT}
+$$
+
+Define:
+
+$$
+x=\frac{1}{T}
+$$
+
+Then:
+
+$$
+\boxed{
+\ln I
+=
+\ln I_0
+-
+\frac{E_a}{k}x
+}
+$$
+
+This has the form:
+
+$$
+y=a+bx
+$$
+
+where:
+
+$$
+y=\ln I
+$$
+
+and:
+
+$$
+x=\frac{1}{T}
+$$
+
+The intercept is:
+
+$$
+a=\ln I_0
+$$
+
+and the slope is:
+
+$$
+\boxed{
+b=-\frac{E_a}{k}
+}
+$$
+
+Therefore:
+
+$$
+\boxed{
+E_a=-bk
+}
+$$
+
+This allows activation energy to be estimated from experimental temperature data.
+
+---
+
+## 10.17 Semiconductor Example — Arrhenius Analysis
+
+Suppose leakage current is measured at several temperatures.
+
+| Temperature (K) | Leakage Current (nA) |
+|---:|---:|
+| 300 | 10 |
+| 310 | 13 |
+| 320 | 17 |
+| 330 | 22 |
+| 340 | 29 |
+
+The relationship may be approximately described by:
+
+$$
+I=I_0e^{-\frac{E_a}{kT}}
+$$
+
+To analyze it:
+
+### Step 1
+
+Calculate:
+
+$$
+\frac{1}{T}
+$$
+
+for each temperature.
+
+### Step 2
+
+Calculate:
+
+$$
+\ln I
+$$
+
+for each current.
+
+### Step 3
+
+Plot:
+
+$$
+\ln I
+$$
+
+against:
+
+$$
+\frac{1}{T}
+$$
+
+### Step 4
+
+Fit a straight line:
+
+$$
+\ln I=a+b\left(\frac{1}{T}\right)
+$$
+
+### Step 5
+
+Use the slope:
+
+$$
+b=-\frac{E_a}{k}
+$$
+
+to estimate:
+
+$$
+\boxed{
+E_a=-bk
+}
+$$
+
+This is a practical example of exponential fitting being used to extract a material or device parameter.
+
+---
+
+## 10.18 Why Temperature Must Be in Kelvin
+
+Suppose the temperature is:
+
+$$
+27^\circ\text{C}
+$$
+
+The corresponding absolute temperature is:
+
+$$
+T=27+273.15
+$$
+
+Therefore:
+
+$$
+\boxed{
+T=300.15\text{ K}
+}
+$$
+
+The Arrhenius equation uses absolute temperature:
+
+$$
+\frac{1}{T}
+$$
+
+Therefore, Celsius should not be used directly.
+
+This is an important practical rule.
+
+---
+
+## 10.19 Original Data vs Transformed Data
+
+Consider the exponential model:
+
+$$
+y=Ae^{Bx}
+$$
+
+In the original scale, the graph is curved.
+
+After transformation:
+
+$$
+\ln y=\ln A+Bx
+$$
+
+the graph becomes linear.
+
+Therefore, we have two ways of looking at the same data.
+
+### Original Scale
+
+Shows the actual physical behavior.
+
+### Log-Transformed Scale
+
+Makes the exponential relationship easier to fit and analyze.
+
+Both views are useful.
+
+The original-scale plot helps us understand the physical response.
+
+The transformed plot helps us estimate the exponential parameters.
+
+---
+
+## 10.20 Exponential Fitting and Linear Fitting
+
+The relationship between Chapters 9 and 10 is important.
+
+### Chapter 9
+
+We directly model:
+
+$$
+y=a+bx
+$$
+
+### Chapter 10
+
+We start with:
+
+$$
+y=Ae^{Bx}
+$$
+
+and transform it:
+
+$$
+\ln y=\ln A+Bx
+$$
+
+which becomes a linear model.
+
+Therefore:
+
+$$
+\boxed{
+\text{Exponential fitting can often be performed through linear fitting after transformation.}
+}
+$$
+
+This connects:
+
+- Logarithms
+- Linear equations
+- Curve fitting
+- Semiconductor physics
+- Statistical data analysis
+
+---
+
+## 10.21 Limitations of Exponential Fitting
+
+An exponential model should not be applied automatically to every dataset.
+
+Possible problems include:
+
+### 1. Wrong Physical Model
+
+The actual device behavior may not be exponential.
+
+### 2. Limited Operating Range
+
+A relationship may be approximately exponential only over a particular range.
+
+### 3. Measurement Noise
+
+Noise can affect the transformed values.
+
+### 4. Zero or Negative Values
+
+The natural logarithm:
+
+$$
+\ln y
+$$
+
+is not defined for:
+
+$$
+y\leq0
+$$
+
+Therefore, logarithmic transformation requires positive values.
+
+### 5. Transformation Changes the Error Structure
+
+Taking logarithms can change how measurement errors are represented.
+
+Therefore, transformed fitting should be interpreted carefully.
+
+---
+
+## 10.22 Common Mistakes
+
+### Mistake 1: Taking the logarithm of zero or a negative value
+
+The natural logarithm requires:
+
+$$
+y>0
+$$
+
+### Mistake 2: Using Celsius in an Arrhenius equation
+
+Use:
+
+$$
+T\text{ in kelvin}
+$$
+
+### Mistake 3: Assuming every curved dataset is exponential
+
+A curved relationship could be:
+
+- Polynomial
+- Power-law
+- Logarithmic
+- Exponential
+- Another nonlinear model
+
+### Mistake 4: Ignoring the operating region
+
+A semiconductor equation may apply only over a particular range.
+
+### Mistake 5: Forgetting that the transformed intercept is $\ln A$
+
+If:
+
+$$
+\ln y=a+bx
+$$
+
+then:
+
+$$
+A=e^a
+$$
+
+not:
+
+$$
+A=a
+$$
+
+### Mistake 6: Interpreting correlation without examining the original data
+
+A high correlation in transformed data does not automatically mean that the original physical model is valid everywhere.
+
+---
+
+## 10.23 Summary
+
+An exponential relationship can be written as:
+
+$$
+\boxed{
+y=Ae^{Bx}
+}
+$$
+
+Taking natural logarithms gives:
+
+$$
+\boxed{
+\ln y=\ln A+Bx
+}
+$$
+
+This converts an exponential relationship into a linear relationship.
+
+For the transformed model:
+
+$$
+\ln y=a+bx
+$$
+
+we have:
+
+$$
+\boxed{
+a=\ln A
+}
+$$
+
+and:
+
+$$
+\boxed{
+b=B
+}
+$$
+
+In semiconductor science, exponential fitting is particularly useful for:
+
+- Diode current-voltage analysis
+- Thermally activated processes
+- Leakage-current analysis
+- Arrhenius-type relationships
+- Extraction of device or material parameters
+
+For the diode equation in the appropriate forward-bias exponential region:
+
+$$
+I\approx I_0e^{\frac{qV}{nkT}}
+$$
+
+and therefore:
+
+$$
+\boxed{
+\ln I
+=
+\ln I_0+
+\frac{q}{nkT}V
+}
+$$
+
+For an Arrhenius-type relationship:
+
+$$
+I=I_0e^{-\frac{E_a}{kT}}
+$$
+
+we obtain:
+
+$$
+\boxed{
+\ln I
+=
+\ln I_0
+-
+\frac{E_a}{k}
+\frac{1}{T}
+}
+$$
+
+The central idea is:
+
+> **Logarithmic transformation allows an exponential semiconductor relationship to be analyzed using the linear-fitting methods introduced in the previous chapter.**
+
+---
+
+## 10.24 Key Formulae
+
+### Exponential Model
+
+$$
+\boxed{
+y=Ae^{Bx}
+}
+$$
+
+### Logarithmic Transformation
+
+$$
+\boxed{
+\ln y=\ln A+Bx
+}
+$$
+
+### Parameter Recovery
+
+$$
+\boxed{
+A=e^a
+}
+$$
+
+and:
+
+$$
+\boxed{
+B=b
+}
+$$
+
+### Diode Equation
+
+$$
+\boxed{
+I=I_0
+\left(
+e^{\frac{qV}{nkT}}-1
+\right)
+}
+$$
+
+### Forward-Bias Approximation
+
+$$
+\boxed{
+I\approx I_0e^{\frac{qV}{nkT}}
+}
+$$
+
+### Linearized Diode Equation
+
+$$
+\boxed{
+\ln I
+=
+\ln I_0+
+\frac{q}{nkT}V
+}
+$$
+
+### Ideality Factor from Slope
+
+If:
+
+$$
+b=\frac{q}{nkT}
+$$
+
+then:
+
+$$
+\boxed{
+n=\frac{q}{bkT}
+}
+$$
+
+### Arrhenius Relationship
+
+$$
+\boxed{
+I=I_0e^{-\frac{E_a}{kT}}
+}
+$$
+
+### Linearized Arrhenius Relationship
+
+$$
+\boxed{
+\ln I
+=
+\ln I_0
+-
+\frac{E_a}{k}
+\frac{1}{T}
+}
+$$
+
+### Activation Energy
+
+If the slope is $b$:
+
+$$
+\boxed{
+E_a=-bk
+}
+$$
+
+---
+
+## 10.25 Review Questions
+
+### Conceptual Questions
+
+1. What is an exponential relationship?
+2. Write the general exponential model.
+3. What is the meaning of $A$ in the model $y=Ae^{Bx}$?
+4. What is the meaning of $B$?
+5. Why can logarithms be used to linearize an exponential relationship?
+6. What is a semi-log plot?
+7. What is the difference between a linear model and an exponential model?
+8. Why must the dependent variable be positive when using $\ln y$?
+9. Why must temperature be expressed in kelvin in an Arrhenius relationship?
+10. Why should an exponential model be applied only over an appropriate operating range?
+
+### Semiconductor Application Questions
+
+11. Why does the diode current-voltage characteristic motivate exponential fitting?
+12. How can a diode's ideality factor be estimated from a semi-log plot?
+13. Why is $\ln I$ plotted against $V$ for diode analysis?
+14. Why is $\ln I$ plotted against $1/T$ in an Arrhenius analysis?
+15. What physical quantity can be estimated from the slope of an Arrhenius plot?
+16. Why might a diode deviate from an ideal exponential relationship at high current?
+17. Why is a high correlation in transformed data not sufficient to prove that a physical model is valid everywhere?
+
+---
+
+## 10.26 Practice Problems
+
+### Problem 1 — Exponential Transformation
+
+Consider:
+
+$$
+y=5e^{2x}
+$$
+
+Take the natural logarithm and write the resulting linear equation.
+
+Identify the slope and intercept.
+
+### Problem 2 — Recovering Exponential Parameters
+
+Suppose the transformed fitted equation is:
+
+$$
+\ln y=1.5+0.8x
+$$
+
+Determine:
+
+1. $A$
+2. $B$
+3. The original exponential equation
+
+### Problem 3 — Diode Analysis
+
+A diode is measured in an appropriate forward-bias region.
+
+Suppose the fitted relationship is:
+
+$$
+\ln I=-15.2+18.5V
+$$
+
+where $V$ is in volts.
+
+Identify:
+
+1. The slope
+2. The intercept
+3. The physical quantity associated with the slope in the simplified diode model
+
+### Problem 4 — Diode Ideality Factor
+
+At:
+
+$$
+T=300\text{ K}
+$$
+
+a semi-log diode plot gives a slope:
+
+$$
+b=20\text{ V}^{-1}
+$$
+
+Using:
+
+$$
+b=\frac{q}{nkT}
+$$
+
+estimate the ideality factor.
+
+Use:
+
+$$
+q=1.602\times10^{-19}\text{ C}
+$$
+
+and:
+
+$$
+k=1.381\times10^{-23}\text{ J/K}
+$$
+
+### Problem 5 — Arrhenius Transformation
+
+Starting from:
+
+$$
+I=I_0e^{-\frac{E_a}{kT}}
+$$
+
+derive the linear equation in terms of:
+
+$$
+\ln I
+$$
+
+and:
+
+$$
+\frac{1}{T}
+$$
+
+Identify the slope.
+
+### Problem 6 — Activation Energy
+
+An Arrhenius plot of:
+
+$$
+\ln I
+$$
+
+against:
+
+$$
+\frac{1}{T}
+$$
+
+has slope:
+
+$$
+b=-1500\text{ K}
+$$
+
+Using:
+
+$$
+E_a=-bk
+$$
+
+estimate the activation energy in joules.
+
+Then convert the result to electron-volts using:
+
+$$
+1\text{ eV}=1.602\times10^{-19}\text{ J}
+$$
+
+### Problem 7 — Model Selection
+
+A semiconductor dataset produces a curved $I$–$V$ characteristic.
+
+Explain why:
+
+1. A straight-line model may not be appropriate.
+2. An exponential model may be appropriate over a particular operating region.
+3. A scatter plot should be examined before selecting the model.
+
+---
+
+## 10.27 Looking Ahead
+
+We have now studied two important approaches to curve fitting.
+
+### Linear Relationship
+
+$$
+y=a+bx
+$$
+
+### Exponential Relationship
+
+$$
+y=Ae^{Bx}
+$$
+
+We have also seen that exponential relationships can be transformed into linear relationships:
+
+$$
+\ln y=\ln A+Bx
+$$
+
+The next step is to understand how we systematically determine the **best-fitting parameters** when many experimental observations are available.
+
+This leads to:
+
+$$
+\boxed{
+\text{Regression Analysis and the Least-Squares Method}
+}
+$$
+
+In the next chapter, we will connect:
+
+- Correlation
+- Linear fitting
+- Residuals
+- Best-fit lines
+- Regression
+- Semiconductor experimental data
