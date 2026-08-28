@@ -1,10 +1,12 @@
-name: Deploy MyST Book
+name: MyST GitHub Pages Deploy
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
+
+env:
+  BASE_URL: /${{ github.event.repository.name }}
 
 permissions:
   contents: read
@@ -13,38 +15,38 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
+    runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          python-version: "3.x"
+          node-version: 24.x
 
       - name: Install MyST
-        run: pip install mystmd
+        run: npm install -g mystmd
 
       - name: Build MyST book
         run: myst build --html
 
-      - name: Setup GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
+      - name: Upload book
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _build/html
+          path: ./_build/html
 
       - name: Deploy to GitHub Pages
         id: deployment
