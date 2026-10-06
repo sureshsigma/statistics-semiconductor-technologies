@@ -94,50 +94,43 @@ The mean is obtained by:
 
 Consider the threshold voltages of five MOSFETs:
 
-\[
+$$
 0.68,\;0.71,\;0.69,\;0.67,\;0.70\text{ V}
-\]
-
+$$
 There are five observations, so
 
-\[
+$$
 n=5
-\]
-
+$$
 The mean is
 
-\[
+$$
 \bar{x}
 =
 \frac{0.68+0.71+0.69+0.67+0.70}{5}
-\]
-
+$$
 First calculate the sum:
 
-\[
+$$
 0.68+0.71+0.69+0.67+0.70=3.45
-\]
-
+$$
 Therefore,
 
-\[
+$$
 \bar{x}=\frac{3.45}{5}
-\]
-
+$$
 and
 
-\[
+$$
 \boxed{\bar{x}=0.69\text{ V}}
-\]
-
+$$
 ### Interpretation
 
 The mean threshold voltage of the five tested devices is:
 
-\[
+$$
 \boxed{0.69\text{ V}}
-\]
-
+$$
 This does **not** mean that every MOSFET has a threshold voltage of exactly \(0.69\) V.
 
 It means that \(0.69\) V is the arithmetic center of these five observations.
@@ -152,40 +145,35 @@ This distinction is important.
 
 Consider repeated measurements of the forward voltage of a diode:
 
-\[
+$$
 0.681,\;0.684,\;0.679,\;0.683,\;0.681\text{ V}
-\]
-
+$$
 The mean is
 
-\[
+$$
 \bar{x}
 =
 \frac{0.681+0.684+0.679+0.683+0.681}{5}
-\]
-
+$$
 The sum is
 
-\[
+$$
 3.408
-\]
-
+$$
 Therefore,
 
-\[
+$$
 \bar{x}
 =
 \frac{3.408}{5}
 =
 0.6816\text{ V}
-\]
-
+$$
 Thus,
 
-\[
+$$
 \boxed{\bar{x}=0.6816\text{ V}}
-\]
-
+$$
 Depending on the required measurement precision, this may be reported appropriately after considering significant figures and measurement uncertainty.
 
 The important point is that the five measurements have been summarized by one representative numerical value.
@@ -198,38 +186,34 @@ One important property of the arithmetic mean is that **every observation contri
 
 Suppose the threshold voltages are:
 
-\[
+$$
 0.68,\;0.69,\;0.70,\;0.71,\;0.72\text{ V}
-\]
-
+$$
 The mean is
 
-\[
+$$
 \bar{x}
 =
 \frac{0.68+0.69+0.70+0.71+0.72}{5}
 =
 0.70\text{ V}
-\]
-
+$$
 Now suppose the last observation changes from \(0.72\) V to \(0.80\) V.
 
 The new mean becomes
 
-\[
+$$
 \bar{x}
 =
 \frac{0.68+0.69+0.70+0.71+0.80}{5}
-\]
-
-\[
+$$
+$$
 \bar{x}
 =
 \frac{3.58}{5}
 =
 0.716\text{ V}
-\]
-
+$$
 The mean has changed because one observation changed.
 
 This is a useful property, but it also creates an important limitation:
@@ -242,35 +226,31 @@ This is a useful property, but it also creates an important limitation:
 
 Consider the following leakage-current measurements:
 
-\[
+$$
 4,\;5,\;5,\;6,\;5\;\mu\text{A}
-\]
-
+$$
 The mean is
 
-\[
+$$
 \bar{x}
 =
 \frac{4+5+5+6+5}{5}
 =
 5\;\mu\text{A}
-\]
-
+$$
 Now suppose one measurement is affected by an abnormal condition and becomes:
 
-\[
+$$
 40\;\mu\text{A}
-\]
-
+$$
 The new dataset is:
 
-\[
+$$
 4,\;5,\;5,\;6,\;40\;\mu\text{A}
-\]
-
+$$
 The mean becomes
 
-\[
+$$
 \bar{x}
 =
 \frac{4+5+5+6+40}{5}
@@ -278,8 +258,7 @@ The mean becomes
 \frac{60}{5}
 =
 12\;\mu\text{A}
-\]
-
+$$
 The mean has increased from \(5\) \(\mu\text{A}\) to \(12\) \(\mu\text{A}\).
 
 However, most observations are still close to \(5\) \(\mu\text{A}\).
@@ -314,42 +293,37 @@ The calculation depends on whether the number of observations is odd or even.
 
 Consider five threshold-voltage measurements:
 
-\[
+$$
 0.68,\;0.71,\;0.69,\;0.67,\;0.70
-\]
-
+$$
 First arrange them in ascending order:
 
-\[
+$$
 0.67,\;0.68,\;0.69,\;0.70,\;0.71
-\]
-
+$$
 There are five observations.
 
 The middle observation is the third observation.
 
 Therefore,
 
-\[
+$$
 \boxed{\text{Median}=0.69\text{ V}}
-\]
-
+$$
 ### Position of the Median
 
 For \(n\) observations, when \(n\) is odd, the position of the median is
 
-\[
+$$
 \boxed{
 \frac{n+1}{2}
 }
-\]
-
+$$
 For \(n=5\),
 
-\[
+$$
 \frac{5+1}{2}=3
-\]
-
+$$
 Therefore, the third observation is the median.
 
 ---
@@ -358,30 +332,26 @@ Therefore, the third observation is the median.
 
 Now consider six measurements:
 
-\[
+$$
 0.67,\;0.68,\;0.69,\;0.70,\;0.71,\;0.72
-\]
-
+$$
 There is no single middle observation.
 
 The two middle observations are:
 
-\[
+$$
 0.69,\quad0.70
-\]
-
+$$
 The median is their average:
 
-\[
+$$
 \text{Median}
 =
 \frac{0.69+0.70}{2}
-\]
-
-\[
+$$
+$$
 \boxed{\text{Median}=0.695\text{ V}}
-\]
-
+$$
 For an even number of observations, the median is therefore the average of the two middle observations after arranging the data in order.
 
 ---
@@ -390,32 +360,27 @@ For an even number of observations, the median is therefore the average of the t
 
 Consider leakage-current measurements:
 
-\[
+$$
 4,\;5,\;5,\;6,\;40\;\mu\text{A}
-\]
-
+$$
 The mean is:
 
-\[
+$$
 \bar{x}=12\;\mu\text{A}
-\]
-
+$$
 The data are already arranged in ascending order, so the median is:
 
-\[
+$$
 \boxed{\text{Median}=5\;\mu\text{A}}
-\]
-
+$$
 Notice the difference:
 
-\[
+$$
 \text{Mean}=12\;\mu\text{A}
-\]
-
-\[
+$$
+$$
 \text{Median}=5\;\mu\text{A}
-\]
-
+$$
 Most measurements are around \(5\;\mu\text{A}\), while one observation is much larger.
 
 The median is not affected as strongly by the extreme observation.
@@ -434,18 +399,16 @@ The **mode** is the value that occurs most frequently in a dataset.
 
 Consider the following number of defective devices observed across several test runs:
 
-\[
+$$
 2,\;3,\;3,\;4,\;3,\;5,\;3
-\]
-
+$$
 The value \(3\) occurs four times.
 
 Therefore,
 
-\[
+$$
 \boxed{\text{Mode}=3}
-\]
-
+$$
 The mode can be useful when the most frequently occurring value is important.
 
 ---
@@ -454,18 +417,16 @@ The mode can be useful when the most frequently occurring value is important.
 
 Suppose the number of devices failing a particular screening test is recorded for several production lots:
 
-\[
+$$
 2,\;4,\;3,\;4,\;5,\;4,\;3,\;4
-\]
-
+$$
 The value \(4\) occurs most frequently.
 
 Therefore,
 
-\[
+$$
 \boxed{\text{Mode}=4}
-\]
-
+$$
 In this example, the mode tells us the most frequently observed number of failures per lot.
 
 ### Important Limitation
@@ -502,28 +463,24 @@ The three measures describe the center of a dataset in different ways.
 
 Consider the dataset:
 
-\[
+$$
 4,\;5,\;5,\;6,\;40
-\]
-
+$$
 Mean:
 
-\[
+$$
 \bar{x}=12
-\]
-
+$$
 Median:
 
-\[
+$$
 \text{Median}=5
-\]
-
+$$
 Mode:
 
-\[
+$$
 \text{Mode}=5
-\]
-
+$$
 The three measures provide different information.
 
 The mean is influenced strongly by the value \(40\).
@@ -570,52 +527,45 @@ The mode is useful when:
 
 Suppose the thickness of a semiconductor layer is measured:
 
-\[
+$$
 98,\;99,\;100,\;100,\;101,\;102,\;100\text{ nm}
-\]
-
+$$
 The mean is:
 
-\[
+$$
 \bar{x}
 =
 \frac{98+99+100+100+101+102+100}{7}
-\]
-
-\[
+$$
+$$
 \bar{x}
 =
 \frac{700}{7}
 =
 100\text{ nm}
-\]
-
+$$
 The ordered data are already:
 
-\[
+$$
 98,\;99,\;100,\;100,\;100,\;101,\;102
-\]
-
+$$
 Therefore,
 
-\[
+$$
 \text{Median}=100\text{ nm}
-\]
-
+$$
 The value \(100\) occurs three times, so:
 
-\[
+$$
 \text{Mode}=100\text{ nm}
-\]
-
+$$
 Thus:
 
-\[
+$$
 \boxed{
 \text{Mean}=\text{Median}=\text{Mode}=100\text{ nm}
 }
-\]
-
+$$
 When these measures are close to one another, the dataset may be relatively balanced around its center.
 
 ---
@@ -626,54 +576,47 @@ Two groups of devices have the following threshold-voltage measurements.
 
 ### Group A
 
-\[
+$$
 0.68,\;0.69,\;0.70,\;0.71,\;0.72\text{ V}
-\]
-
+$$
 The mean is:
 
-\[
+$$
 \bar{x}_A
 =
 \frac{0.68+0.69+0.70+0.71+0.72}{5}
 =
 0.70\text{ V}
-\]
-
+$$
 The median is:
 
-\[
+$$
 \boxed{\text{Median}_A=0.70\text{ V}}
-\]
-
+$$
 ### Group B
 
-\[
+$$
 0.68,\;0.69,\;0.70,\;0.71,\;0.90\text{ V}
-\]
-
+$$
 The mean is:
 
-\[
+$$
 \bar{x}_B
 =
 \frac{0.68+0.69+0.70+0.71+0.90}{5}
-\]
-
-\[
+$$
+$$
 \bar{x}_B
 =
 \frac{3.68}{5}
 =
 0.736\text{ V}
-\]
-
+$$
 The median is:
 
-\[
+$$
 \boxed{\text{Median}_B=0.70\text{ V}}
-\]
-
+$$
 Notice that the median remains \(0.70\) V, while the mean increases to \(0.736\) V because of the \(0.90\) V observation.
 
 This example demonstrates why engineers should examine the data rather than relying on a single summary number.
@@ -716,10 +659,9 @@ For the arithmetic mean, divide by the number of observations.
 
 If there are \(n\) observations:
 
-\[
+$$
 \bar{x}=\frac{\sum x_i}{n}
-\]
-
+$$
 ### Mistake 3: Assuming the mean is always the "best" typical value
 
 The mean can be strongly influenced by extreme observations.
@@ -744,12 +686,11 @@ The three basic measures introduced in this chapter are:
 
 ### Mean
 
-\[
+$$
 \boxed{
 \bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i
 }
-\]
-
+$$
 The mean uses every observation but can be affected by extreme values.
 
 ### Median
@@ -758,12 +699,11 @@ The median is the middle value after arranging the observations in order.
 
 For odd \(n\):
 
-\[
+$$
 \boxed{
 \text{Median position}=\frac{n+1}{2}
 }
-\]
-
+$$
 For even \(n\), the median is the average of the two middle observations.
 
 ### Mode
@@ -786,46 +726,41 @@ That leads to the next group of statistical concepts: **measures of dispersion**
 
 ### Arithmetic Mean
 
-\[
+$$
 \boxed{
 \bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}
 }
-\]
-
+$$
 or
 
-\[
+$$
 \boxed{
 \bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i
 }
-\]
-
+$$
 ### Median for Odd \(n\)
 
-\[
+$$
 \boxed{
 \text{Median position}=\frac{n+1}{2}
 }
-\]
-
+$$
 ### Median for Even \(n\)
 
-\[
+$$
 \boxed{
 \text{Median}
 =
 \frac{\text{two middle observations}}{2}
 }
-\]
-
+$$
 ### Mode
 
-\[
+$$
 \boxed{
 \text{Mode}=\text{most frequently occurring value}
 }
-\]
-
+$$
 ---
 
 ## 2.21 Review Questions
@@ -859,20 +794,18 @@ or
 
 The threshold voltages of six MOSFETs are:
 
-\[
+$$
 0.68,\;0.71,\;0.69,\;0.70,\;0.72,\;0.70\text{ V}
-\]
-
+$$
 Calculate the arithmetic mean.
 
 ### Problem 2 — Median
 
 The forward voltages of seven diodes are:
 
-\[
+$$
 0.69,\;0.68,\;0.71,\;0.70,\;0.68,\;0.69,\;0.72\text{ V}
-\]
-
+$$
 1. Arrange the data in ascending order.
 2. Find the median.
 
@@ -880,30 +813,27 @@ The forward voltages of seven diodes are:
 
 The resistance measurements of six components are:
 
-\[
+$$
 98,\;101,\;100,\;99,\;103,\;102\;\Omega
-\]
-
+$$
 Calculate the median.
 
 ### Problem 4 — Mode
 
 The number of defective devices detected in eight production lots is:
 
-\[
+$$
 2,\;3,\;4,\;3,\;5,\;3,\;4,\;3
-\]
-
+$$
 Find the mode.
 
 ### Problem 5 — Effect of an Extreme Observation
 
 The leakage currents of five devices are:
 
-\[
+$$
 4,\;5,\;5,\;6,\;40\;\mu\text{A}
-\]
-
+$$
 1. Calculate the mean.
 2. Find the median.
 3. Compare the two values.
@@ -915,16 +845,14 @@ Two device batches have the following threshold voltages:
 
 **Batch A**
 
-\[
+$$
 0.68,\;0.69,\;0.70,\;0.71,\;0.72
-\]
-
+$$
 **Batch B**
 
-\[
+$$
 0.68,\;0.69,\;0.70,\;0.71,\;0.90
-\]
-
+$$
 Calculate the mean and median for both batches and explain what the results suggest.
 
 ---
@@ -937,22 +865,19 @@ But two datasets can have the same mean and very different amounts of variation.
 
 For example, consider:
 
-\[
+$$
 99,\;100,\;100,\;100,\;101
-\]
-
+$$
 and
 
-\[
+$$
 80,\;90,\;100,\;110,\;120
-\]
-
+$$
 Both have a mean of:
 
-\[
+$$
 100
-\]
-
+$$
 but their variability is clearly different.
 
 Therefore, our next question is:
