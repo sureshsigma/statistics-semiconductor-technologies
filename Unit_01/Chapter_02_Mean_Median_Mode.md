@@ -63,23 +63,23 @@ $$
 
 the arithmetic mean is given by
 
-\[
+$$
 \boxed{
 \bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}
 }
-\]
+$$
 
 Using summation notation,
 
-\[
+$$
 \boxed{
 \bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i
 }
-\]
+$$
 
 where:
 
-- \(\bar{x}\) = arithmetic mean
+- $\bar{x}$ = arithmetic mean
 - \(x_i\) = the \(i\)-th observation
 - \(n\) = number of observations
 
