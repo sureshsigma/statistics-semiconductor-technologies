@@ -57,9 +57,9 @@ The arithmetic mean is commonly called the **average**.
 
 For a set of \(n\) observations
 
-\[
+$$
 x_1,x_2,x_3,\ldots,x_n
-\]
+$$
 
 the arithmetic mean is given by
 
