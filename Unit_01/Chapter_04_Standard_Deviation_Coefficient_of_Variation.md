@@ -527,14 +527,15 @@ $$
 Therefore:
 
 $$
-\boxed{CV_A=10\%}
+\boxed{CV_A = 10\%}
 $$
 
 and
 
 $$
-\boxed{CV_B=5\%}
+\boxed{CV_B = 5\%}
 $$
+
 
 Although B has a larger standard deviation in absolute units, A has greater **relative variability**.
 
