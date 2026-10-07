@@ -45,7 +45,7 @@ $$
 If a scatter plot shows an approximately linear pattern, we can consider a linear regression model:
 
 $$
-oxed{
+boxed{
 \hat y=b_0+b_1x
 }
 $$
