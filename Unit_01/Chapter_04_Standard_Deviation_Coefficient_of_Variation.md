@@ -293,19 +293,14 @@ $$
 Therefore:
 
 $$
-s^2
-=
-\frac{0.0010}{5-1}
-=
-0.00025\text{ V}^2
+s^2=\frac{0.0010}{5-1}
+=0.00025\text{ V}^2
 $$
 
 Taking the square root:
 
 $$
-s
-=
-\sqrt{0.00025}
+s=\sqrt{0.00025}
 $$
 
 Therefore,
