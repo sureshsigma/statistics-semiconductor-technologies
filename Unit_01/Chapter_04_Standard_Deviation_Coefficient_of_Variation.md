@@ -163,16 +163,14 @@ Therefore, the population variance is:
 $$
 \sigma^2=
 \frac{0.0010}{5}
-=
-0.0002\text{ V}^2
+=0.0002\text{ V}^2
 $$
 
 The standard deviation is:
 
 $$
 \sigma
-=
-\sqrt{0.0002}
+=\sqrt{0.0002}
 $$
 
 Therefore,
