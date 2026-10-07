@@ -1114,7 +1114,7 @@ $$
 The sum of squared errors is:
 
 $$
-boxed{
+\boxed{
 SSE=\sum(y_i-\hat y_i)^2
 }
 $$
@@ -1123,7 +1123,7 @@ The mean squared error is:
 
 $$
 \boxed{
-MSE=rac{SSE}{n-2}
+MSE=\frac{SSE}{n-2}
 }
 $$
 
@@ -1139,7 +1139,7 @@ The coefficient of determination is:
 
 $$
 \boxed{
-R^2=1-rac{SSE}{SST}
+R^2=1-\frac{SSE}{SST}
 }
 $$
 
@@ -1173,7 +1173,7 @@ $$
 $$
 \boxed{
 b_1=
-rac{
+\frac{
 \sum(x_i-\bar{x})(y_i-\bar{y})
 }{
 \sum(x_i-\bar{x})^2
