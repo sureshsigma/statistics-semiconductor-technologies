@@ -958,7 +958,7 @@ A practical regression analysis can be summarized as:
 
 $$
 \boxed{
-	ext{Collect Data}
+	\text{Collect Data}
 }
 $$
 
@@ -966,7 +966,7 @@ $$
 
 $$
 \boxed{
-	ext{Explore Data}
+	\text{Explore Data}
 }
 $$
 
@@ -974,7 +974,7 @@ $$
 
 $$
 \boxed{
-	ext{Scatter Plot}
+	\text{Scatter Plot}
 }
 $$
 
@@ -982,7 +982,7 @@ $$
 
 $$
 \boxed{
-	ext{Choose Appropriate Model}
+	\text{Choose Appropriate Model}
 }
 $$
 
@@ -990,7 +990,7 @@ $$
 
 $$
 \boxed{
-	ext{Estimate Parameters}
+	\text{Estimate Parameters}
 }
 $$
 
@@ -998,7 +998,7 @@ $$
 
 $$
 \boxed{
-	ext{Calculate Fitted Values}
+	\text{Calculate Fitted Values}
 }
 $$
 
@@ -1006,7 +1006,7 @@ $$
 
 $$
 \boxed{
-	ext{Analyze Residuals}
+	\text{Analyze Residuals}
 }
 $$
 
@@ -1014,7 +1014,7 @@ $$
 
 $$
 \boxed{
-	ext{Evaluate Fit}
+	\text{Evaluate Fit}
 }
 $$
 
@@ -1022,7 +1022,7 @@ $$
 
 $$
 \boxed{
-	ext{Interpret Physically}
+	\text{Interpret Physically}
 }
 $$
 
@@ -1030,7 +1030,7 @@ $$
 
 $$
 \boxed{
-	ext{Predict if Appropriate}
+	\text{Predict if Appropriate}
 }
 $$
 
@@ -1088,9 +1088,9 @@ $$
 \boxed{
 b_1=
 rac{
-\sum(x_i-ar{x})(y_i-ar{y})
+\sum(x_i-\bar{x})(y_i-\bar{y})
 }{
-\sum(x_i-ar{x})^2
+\sum(x_i-\bar{x})^2
 }
 }
 $$
@@ -1209,7 +1209,7 @@ $$
 
 $$
 \boxed{
-MSE=rac{SSE}{n-2}
+MSE=\frac{SSE}{n-2}
 }
 $$
 
@@ -1233,7 +1233,7 @@ $$
 
 $$
 \boxed{
-R^2=1-rac{SSE}{SST}
+R^2=1-\frac{SSE}{SST}
 }
 $$
 
@@ -1425,31 +1425,31 @@ Explain:
 Regression analysis brings together many ideas developed in the previous chapters:
 
 $$
-oxed{
-	ext{Experimental Data}
+\boxed{
+	\text{Experimental Data}
 
-ightarrow
-	ext{Scatter Plot}
+\rightarrow
+	\text{Scatter Plot}
 
-ightarrow
-	ext{Relationship}
+\rightarrow
+	\text{Relationship}
 
-ightarrow
-	ext{Model}
+\rightarrow
+	\text{Model}
 }
 $$
 
 Then:
 
 $$
-oxed{
-	ext{Slope + Intercept}
+\boxed{
+	\text{Slope + Intercept}
 
-ightarrow
+\rightarrow
 	ext{Fitted Values}
 
-ightarrow
-	ext{Residuals}
+\rightarrow
+	\text{Residuals}
 }
 $$
 
@@ -1457,19 +1457,19 @@ and finally:
 
 $$
 \boxed{
-	ext{SSE}
+	\text{SSE}
 
-rightarrow
-	ext{RMSE}
+\rightarrow
+	\text{RMSE}
 
 rightarrow
 R^2
 
-rightarrow
-	ext{Interpretation}
+\rightarrow
+	\text{Interpretation}
 
-rightarrow
-	ext{Prediction}
+\rightarrow
+	\text{Prediction}
 }
 $$
 
