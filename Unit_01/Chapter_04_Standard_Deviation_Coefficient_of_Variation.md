@@ -502,9 +502,9 @@ $$
 
 If we only compare standard deviation:
 
-\[
-5\text{ mA}>1\text{ mA}
-\]
+$$
+5\text{mA}>1\text{mA}
+$$
 
 we might conclude that Measurement B is more variable.
 
@@ -515,21 +515,13 @@ Calculate the coefficient of variation.
 For A:
 
 $$
-CV_A
-=
-\frac{1}{10}\times100
-=
-10\%
+CV_A=\frac{1}{10}\times100=10\%
 $$
 
 For B:
 
 $$
-CV_B
-=
-\frac{5}{100}\times100
-=
-5\%
+CV_B=\frac{5}{100}\times100=5\%
 $$
 
 Therefore:
@@ -571,11 +563,7 @@ $$
 Therefore:
 
 $$
-CV_A
-=
-\frac{1}{20}\times100
-=
-5\%
+CV_A=\frac{1}{20}\times100=5\%
 $$
 
 ### Sensor B
@@ -595,11 +583,7 @@ $$
 Therefore:
 
 $$
-CV_B
-=
-\frac{5}{200}\times100
-=
-2.5\%
+CV_B=\frac{5}{200}\times100=2.5\%
 $$
 
 Although Sensor B has a larger standard deviation:
@@ -639,11 +623,7 @@ $$
 Therefore:
 
 $$
-CV_A
-=
-\frac{2}{100}\times100
-=
-2\%
+CV_A=\frac{2}{100}\times100=2\%
 $$
 
 ### Process B
@@ -663,11 +643,7 @@ $$
 Therefore:
 
 $$
-CV_B
-=
-\frac{10}{1000}\times100
-=
-1\%
+CV_B=\frac{10}{1000}\times100=1\%
 $$
 
 Process B has a larger absolute standard deviation:
@@ -788,21 +764,13 @@ Calculate the coefficient of variation.
 For Line A:
 
 $$
-CV_A
-=
-\frac{3}{100}\times100
-=
-3\%
+CV_A=\frac{3}{100}\times100=3\%
 $$
 
 For Line B:
 
 $$
-CV_B
-=
-\frac{8}{500}\times100
-=
-1.6\%
+CV_B=\frac{8}{500}\times100=1.6\%
 $$
 
 Therefore:
