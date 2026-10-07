@@ -882,7 +882,7 @@ Use:
 
 $$
 b_1=
-rac{
+\frac{
 \sum(I_i-\bar I)(V_i-\bar V)
 }{
 \sum(I_i-\bar I)^2
@@ -1087,7 +1087,7 @@ The slope is:
 $$
 \boxed{
 b_1=
-rac{
+\frac{
 \sum(x_i-\bar{x})(y_i-\bar{y})
 }{
 \sum(x_i-\bar{x})^2
