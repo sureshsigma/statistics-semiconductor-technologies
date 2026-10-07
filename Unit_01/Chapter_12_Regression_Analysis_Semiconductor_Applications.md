@@ -619,13 +619,13 @@ Prediction within the observed range.
 If the calibration data cover:
 
 $$
-20^\circ	ext{C}	ext{ to }60^\circ	ext{C}
+20^\circ	\text{C}	\text{ to }60^\circ	\text{C}
 $$
 
 then predicting at:
 
 $$
-45^\circ	ext{C}
+45^\circ	\text{C}
 $$
 
 is interpolation.
@@ -637,7 +637,7 @@ Prediction outside the observed range.
 Predicting at:
 
 $$
-100^\circ	ext{C}
+100^\circ	\text{C}
 $$
 
 would be extrapolation.
