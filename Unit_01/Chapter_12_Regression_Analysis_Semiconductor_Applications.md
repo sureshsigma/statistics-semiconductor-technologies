@@ -564,7 +564,7 @@ Then:
 
 $$
 \boxed{
-b_1=0.0195	ext{ V}/^\circ	ext{C}
+b_1=0.0195	\text{ V}/^\circ	\text{C}
 }
 $$
 
@@ -572,7 +572,7 @@ Therefore:
 
 $$
 \boxed{
-	ext{Sensor sensitivity}=0.0195	ext{ V}/^\circ	ext{C}
+	\text{Sensor sensitivity}=0.0195	\text{ V}/^\circ	\text{C}
 }
 $$
 
@@ -589,7 +589,7 @@ $$
 At:
 
 $$
-T=45^\circ	ext{C}
+T=45^\circ	\text{C}
 $$
 
 we obtain:
@@ -602,7 +602,7 @@ Therefore:
 
 $$
 \boxed{
-\hat V \approx1.50	ext{ V}
+\hat V \approx1.50	\text{ V}
 }
 $$
 
@@ -1427,27 +1427,23 @@ Regression analysis brings together many ideas developed in the previous chapter
 $$
 \boxed{
 	\text{Experimental Data}
-
 \rightarrow
 	\text{Scatter Plot}
-
 \rightarrow
 	\text{Relationship}
-
 \rightarrow
 	\text{Model}
 }
 $$
+
 
 Then:
 
 $$
 \boxed{
 	\text{Slope + Intercept}
-
 \rightarrow
-	ext{Fitted Values}
-
+	\text{Fitted Values}
 \rightarrow
 	\text{Residuals}
 }
@@ -1458,16 +1454,12 @@ and finally:
 $$
 \boxed{
 	\text{SSE}
-
 \rightarrow
 	\text{RMSE}
-
-rightarrow
-R^2
-
+\rightarrow
+\text{R^2}
 \rightarrow
 	\text{Interpretation}
-
 \rightarrow
 	\text{Prediction}
 }
