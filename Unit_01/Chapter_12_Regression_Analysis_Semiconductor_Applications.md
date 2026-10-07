@@ -45,9 +45,7 @@ $$
 If a scatter plot shows an approximately linear pattern, we can consider a linear regression model:
 
 $$
-boxed{
-\hat y=b_0+b_1x
-}
+boxed{\hat y=b_0+b_1x}
 $$
 
 where:
@@ -70,8 +68,7 @@ The **dependent variable** is the variable being predicted or explained.
 If current is used to predict voltage:
 
 $$
-I
-ightarrow V
+I \rightarrow V
 $$
 
 then:
