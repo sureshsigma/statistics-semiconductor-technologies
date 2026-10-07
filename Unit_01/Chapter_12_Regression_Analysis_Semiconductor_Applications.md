@@ -383,7 +383,7 @@ For simple linear regression:
 
 $$
 \boxed{
-MSE=rac{SSE}{n-2}
+MSE=\frac{SSE}{n-2}
 }
 $$
 
