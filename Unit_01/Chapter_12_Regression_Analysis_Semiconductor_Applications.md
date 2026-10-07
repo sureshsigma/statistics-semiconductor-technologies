@@ -45,7 +45,7 @@ $$
 If a scatter plot shows an approximately linear pattern, we can consider a linear regression model:
 
 $$
-boxed{\hat y=b_0+b_1x}
+\boxed{\hat y=b_0+b_1x}
 $$
 
 where:
@@ -79,7 +79,7 @@ then:
 The regression model becomes:
 
 $$
-oxed{
+\boxed{
 \hat V=b_0+b_1I
 }
 $$
@@ -105,7 +105,7 @@ For ordinary linear regression, the criterion is based on minimizing the sum of 
 The simple linear regression model is:
 
 $$
-oxed{
+\boxed{
 \hat y=b_0+b_1x
 }
 $$
@@ -153,7 +153,7 @@ In an approximately ohmic region, the regression slope has the physical meaning 
 For simple linear regression:
 
 $$
-oxed{
+\boxed{
 b_1=
 rac{
 \sum_{i=1}^{n}(x_i-ar{x})(y_i-ar{y})
@@ -167,8 +167,8 @@ where:
 
 - $x_i$ = observation of $x$
 - $y_i$ = observation of $y$
-- $ar{x}$ = mean of $x$
-- $ar{y}$ = mean of $y$
+- $\bar{x}$ = mean of $x$
+- $\bar{y}$ = mean of $y$
 - $n$ = number of observations
 
 The numerator measures how the two variables vary together, while the denominator measures the variation in $x$.
@@ -180,15 +180,15 @@ The numerator measures how the two variables vary together, while the denominato
 Once $b_1$ has been calculated:
 
 $$
-oxed{
-b_0=ar y-b_1ar x
+\boxed{
+b_0=\bar y-b_1\bar x
 }
 $$
 
 Therefore:
 
 $$
-oxed{
+\boxed{
 \hat y=b_0+b_1x
 }
 $$
@@ -228,7 +228,7 @@ $$
 Therefore:
 
 $$
-oxed{\hat y=7}
+\boxed{\hat y=7}
 $$
 
 ---
@@ -258,7 +258,7 @@ The difference is called the **residual**.
 A residual is:
 
 $$
-oxed{
+\boxed{
 e_i=y_i-\hat y_i
 }
 $$
@@ -308,7 +308,7 @@ $$
 so:
 
 $$
-oxed{e=-0.04	ext{ V}}
+\boxed{e=-0.04	ext{ V}}
 $$
 
 ---
@@ -328,7 +328,7 @@ and add them.
 This gives the **sum of squared errors**:
 
 $$
-oxed{
+\boxed{
 SSE=
 \sum_{i=1}^{n}(y_i-\hat y_i)^2
 }
@@ -347,7 +347,7 @@ The central idea is:
 Mathematically:
 
 $$
-oxed{
+\boxed{
 	ext{Choose }b_0,b_1
 	ext{ to minimize }
 \sum_{i=1}^{n}[y_i-(b_0+b_1x_i)]^2
@@ -361,7 +361,7 @@ This is the mathematical foundation of ordinary least-squares linear regression.
 ## 12.14 Sum of Squared Errors — SSE
 
 $$
-oxed{
+\boxed{
 SSE=
 \sum_{i=1}^{n}(y_i-\hat y_i)^2
 }
@@ -378,7 +378,7 @@ SSE depends on the scale and units of the dependent variable, so other measures 
 For simple linear regression:
 
 $$
-oxed{
+\boxed{
 MSE=rac{SSE}{n-2}
 }
 $$
@@ -392,7 +392,7 @@ MSE represents the average squared error after accounting for the fitted paramet
 ## 12.16 Root Mean Squared Error — RMSE
 
 $$
-oxed{
+\boxed{
 RMSE=\sqrt{MSE}
 }
 $$
@@ -410,7 +410,7 @@ It can therefore be interpreted as a typical scale of prediction error.
 The total variation in the dependent variable is:
 
 $$
-oxed{
+\boxed{
 SST=
 \sum_{i=1}^{n}(y_i-ar y)^2
 }
@@ -437,7 +437,7 @@ $$
 Therefore:
 
 $$
-oxed{
+\boxed{
 SST=SSR+SSE
 }
 $$
@@ -449,7 +449,7 @@ $$
 The coefficient of determination is:
 
 $$
-oxed{
+\boxed{
 R^2=1-rac{SSE}{SST}
 }
 $$
@@ -513,7 +513,7 @@ $$
 Therefore:
 
 $$
-oxed{
+\boxed{
 b_1=\Omega
 }
 $$
@@ -521,7 +521,7 @@ $$
 For an approximately ohmic region:
 
 $$
-oxed{
+\boxed{
 R pprox b_1
 }
 $$
@@ -545,7 +545,7 @@ Suppose a semiconductor temperature sensor produces:
 We fit:
 
 $$
-oxed{
+\boxed{
 \hat V=b_0+b_1T
 }
 $$
@@ -559,7 +559,7 @@ $$
 Then:
 
 $$
-oxed{
+\boxed{
 b_1=0.0195	ext{ V}/^\circ	ext{C}
 }
 $$
@@ -567,7 +567,7 @@ $$
 Therefore:
 
 $$
-oxed{
+\boxed{
 	ext{Sensor sensitivity}=0.0195	ext{ V}/^\circ	ext{C}
 }
 $$
@@ -597,7 +597,7 @@ $$
 Therefore:
 
 $$
-oxed{
+\boxed{
 \hat V pprox1.50	ext{ V}
 }
 $$
@@ -704,7 +704,7 @@ $$
 Also, in standard simple linear regression:
 
 $$
-oxed{
+\boxed{
 R^2=r^2
 }
 $$
@@ -879,9 +879,9 @@ Use:
 $$
 b_1=
 rac{
-\sum(I_i-ar I)(V_i-ar V)
+\sum(I_i-\bar I)(V_i-\bar V)
 }{
-\sum(I_i-ar I)^2
+\sum(I_i-\bar I)^2
 }
 $$
 
@@ -890,13 +890,13 @@ $$
 Use:
 
 $$
-b_0=ar V-b_1ar I
+b_0=\bar V-b_1\bar I
 $$
 
 ### Step 4 — Write the regression equation
 
 $$
-oxed{
+\boxed{
 \hat V=b_0+b_1I
 }
 $$
@@ -912,7 +912,7 @@ $$
 Therefore:
 
 $$
-oxed{
+\boxed{
 b_1 pprox R
 }
 $$
@@ -953,7 +953,7 @@ The regression model provides an estimate of device resistance and indicates how
 A practical regression analysis can be summarized as:
 
 $$
-oxed{
+\boxed{
 	ext{Collect Data}
 }
 $$
@@ -961,7 +961,7 @@ $$
 ↓
 
 $$
-oxed{
+\boxed{
 	ext{Explore Data}
 }
 $$
@@ -969,7 +969,7 @@ $$
 ↓
 
 $$
-oxed{
+\boxed{
 	ext{Scatter Plot}
 }
 $$
@@ -977,7 +977,7 @@ $$
 ↓
 
 $$
-oxed{
+\boxed{
 	ext{Choose Appropriate Model}
 }
 $$
@@ -985,7 +985,7 @@ $$
 ↓
 
 $$
-oxed{
+\boxed{
 	ext{Estimate Parameters}
 }
 $$
@@ -993,7 +993,7 @@ $$
 ↓
 
 $$
-oxed{
+\boxed{
 	ext{Calculate Fitted Values}
 }
 $$
@@ -1001,7 +1001,7 @@ $$
 ↓
 
 $$
-oxed{
+\boxed{
 	ext{Analyze Residuals}
 }
 $$
@@ -1009,7 +1009,7 @@ $$
 ↓
 
 $$
-oxed{
+\boxed{
 	ext{Evaluate Fit}
 }
 $$
@@ -1017,7 +1017,7 @@ $$
 ↓
 
 $$
-oxed{
+\boxed{
 	ext{Interpret Physically}
 }
 $$
@@ -1025,7 +1025,7 @@ $$
 ↓
 
 $$
-oxed{
+\boxed{
 	ext{Predict if Appropriate}
 }
 $$
@@ -1073,7 +1073,7 @@ Regression analysis provides a systematic way to model relationships between var
 The simple linear regression model is:
 
 $$
-oxed{
+\boxed{
 \hat y=b_0+b_1x
 }
 $$
@@ -1081,7 +1081,7 @@ $$
 The slope is:
 
 $$
-oxed{
+\boxed{
 b_1=
 rac{
 \sum(x_i-ar{x})(y_i-ar{y})
@@ -1094,15 +1094,15 @@ $$
 The intercept is:
 
 $$
-oxed{
-b_0=ar y-b_1ar x
+\boxed{
+b_0=\bar y-b_1\bar x
 }
 $$
 
 The residual is:
 
 $$
-oxed{
+\boxed{
 e_i=y_i-\hat y_i
 }
 $$
@@ -1110,7 +1110,7 @@ $$
 The sum of squared errors is:
 
 $$
-oxed{
+boxed{
 SSE=\sum(y_i-\hat y_i)^2
 }
 $$
@@ -1118,7 +1118,7 @@ $$
 The mean squared error is:
 
 $$
-oxed{
+\boxed{
 MSE=rac{SSE}{n-2}
 }
 $$
@@ -1126,7 +1126,7 @@ $$
 The root mean squared error is:
 
 $$
-oxed{
+\boxed{
 RMSE=\sqrt{MSE}
 }
 $$
@@ -1134,7 +1134,7 @@ $$
 The coefficient of determination is:
 
 $$
-oxed{
+\boxed{
 R^2=1-rac{SSE}{SST}
 }
 $$
@@ -1159,7 +1159,7 @@ The central idea is:
 ### Regression Equation
 
 $$
-oxed{
+\boxed{
 \hat y=b_0+b_1x
 }
 $$
@@ -1167,12 +1167,12 @@ $$
 ### Regression Slope
 
 $$
-oxed{
+\boxed{
 b_1=
 rac{
-\sum(x_i-ar{x})(y_i-ar{y})
+\sum(x_i-\bar{x})(y_i-\bar{y})
 }{
-\sum(x_i-ar{x})^2
+\sum(x_i-\bar{x})^2
 }
 }
 $$
@@ -1180,15 +1180,15 @@ $$
 ### Regression Intercept
 
 $$
-oxed{
-b_0=ar y-b_1ar x
+\boxed{
+b_0=\bar y-b_1\bar x
 }
 $$
 
 ### Residual
 
 $$
-oxed{
+\boxed{
 e_i=y_i-\hat y_i
 }
 $$
@@ -1196,7 +1196,7 @@ $$
 ### Sum of Squared Errors
 
 $$
-oxed{
+\boxed{
 SSE=\sum(y_i-\hat y_i)^2
 }
 $$
@@ -1204,7 +1204,7 @@ $$
 ### Mean Squared Error
 
 $$
-oxed{
+\boxed{
 MSE=rac{SSE}{n-2}
 }
 $$
@@ -1212,7 +1212,7 @@ $$
 ### Root Mean Squared Error
 
 $$
-oxed{
+\boxed{
 RMSE=\sqrt{MSE}
 }
 $$
@@ -1220,15 +1220,15 @@ $$
 ### Total Sum of Squares
 
 $$
-oxed{
-SST=\sum(y_i-ar y)^2
+\boxed{
+SST=\sum(y_i-\bar y)^2
 }
 $$
 
 ### Coefficient of Determination
 
 $$
-oxed{
+\boxed{
 R^2=1-rac{SSE}{SST}
 }
 $$
@@ -1452,19 +1452,19 @@ $$
 and finally:
 
 $$
-oxed{
+\boxed{
 	ext{SSE}
 
-ightarrow
+rightarrow
 	ext{RMSE}
 
-ightarrow
+rightarrow
 R^2
 
-ightarrow
+rightarrow
 	ext{Interpretation}
 
-ightarrow
+rightarrow
 	ext{Prediction}
 }
 $$
