@@ -454,7 +454,7 @@ The coefficient of determination is:
 
 $$
 \boxed{
-R^2=1-rac{SSE}{SST}
+R^2=1-\frac{SSE}{SST}
 }
 $$
 
@@ -511,7 +511,7 @@ $$
 If $V$ is measured in volts and $I$ in amperes:
 
 $$
-b_1=rac{	ext{V}}{	ext{A}}
+b_1=\frac{	ext{V}}{	ext{A}}
 $$
 
 Therefore:
@@ -526,7 +526,7 @@ For an approximately ohmic region:
 
 $$
 \boxed{
-R pprox b_1
+R \approx b_1
 }
 $$
 
@@ -602,7 +602,7 @@ Therefore:
 
 $$
 \boxed{
-\hat V pprox1.50	ext{ V}
+\hat V \approx1.50	ext{ V}
 }
 $$
 
