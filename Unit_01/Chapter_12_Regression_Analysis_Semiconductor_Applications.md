@@ -416,7 +416,7 @@ The total variation in the dependent variable is:
 $$
 \boxed{
 SST=
-\sum_{i=1}^{n}(y_i-ar y)^2
+\sum_{i=1}^{n}(y_i-\bar y)^2
 }
 $$
 
