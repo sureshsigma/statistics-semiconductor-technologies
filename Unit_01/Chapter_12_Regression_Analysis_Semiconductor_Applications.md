@@ -348,11 +348,15 @@ Mathematically:
 
 $$
 \boxed{
-	ext{Choose }b_0,b_1
-	ext{ to minimize }
+\begin{aligned}
+&\text{Choose } b_0,b_1 \\
+&\text{to minimize }
 \sum_{i=1}^{n}[y_i-(b_0+b_1x_i)]^2
+\end{aligned}
 }
 $$
+
+
 
 This is the mathematical foundation of ordinary least-squares linear regression.
 
