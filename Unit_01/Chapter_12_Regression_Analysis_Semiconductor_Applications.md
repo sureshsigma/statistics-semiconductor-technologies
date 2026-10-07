@@ -910,14 +910,14 @@ $$
 Because voltage is measured in volts and current in amperes:
 
 $$
-b_1=rac{	ext{V}}{	ext{A}}=\Omega
+b_1=\frac{	\text{V}}{	\text{A}}=\Omega
 $$
 
 Therefore:
 
 $$
 \boxed{
-b_1 pprox R
+b_1 \approx R
 }
 $$
 
