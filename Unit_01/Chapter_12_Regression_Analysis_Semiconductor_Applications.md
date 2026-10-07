@@ -156,9 +156,9 @@ $$
 \boxed{
 b_1=
 rac{
-\sum_{i=1}^{n}(x_i-ar{x})(y_i-ar{y})
+\sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})
 }{
-\sum_{i=1}^{n}(x_i-ar{x})^2
+\sum_{i=1}^{n}(x_i-\bar{x})^2
 }
 }
 $$
