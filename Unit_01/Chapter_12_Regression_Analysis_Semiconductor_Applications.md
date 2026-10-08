@@ -153,13 +153,7 @@ In an approximately ohmic region, the regression slope has the physical meaning 
 For simple linear regression:
 
 $$
-\boxed{b_1=
-\frac{
-\sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})
-}{
-\sum_{i=1}^{n}(x_i-\bar{x})^2
-}
-}
+\boxed{b_1=\frac{\sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})}{\sum_{i=1}^{n}(x_i-\bar{x})^2}}
 $$
 
 where:
