@@ -155,7 +155,7 @@ For simple linear regression:
 $$
 \boxed{
 b_1=
-rac{
+\frac{
 \sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})
 }{
 \sum_{i=1}^{n}(x_i-\bar{x})^2
