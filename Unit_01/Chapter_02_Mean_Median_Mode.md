@@ -259,9 +259,9 @@ $$
 =
 12\;\mu\text{A}
 $$
-The mean has increased from  $$5 \mu\text{A} to 12 \mu\text{A}.$$
+The mean has increased from  5 $$\mu\text{A}$$ to 12 $$\mu\text{A}.$$
 
-However, most observations are still close to $$5 \mu\text{A}$$.
+However, most observations are still close to 5 $$\mu\text{A}$$.
 
 This illustrates why an extreme observation can strongly influence the mean.
 
